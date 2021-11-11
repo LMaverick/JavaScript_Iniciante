@@ -12,10 +12,64 @@
     
 
     <script> /*Pra colocar o java script, ele carrega sempre por ultimo e no fim do codigo*/
-    window.alert('Minha primeira mensagem');
-    window.confirm('Está gostando do JS');
-    windown.prompt('Qual seu nome?');
+    /*window.alert('Minha primeira mensagem');
+    window.confirm('Está gostando do JS');  */
+    var nome = window.prompt('Qual seu nome?');
+    window.alert('É um grande prazer em te conhecer, ' + nome + '!') //o + serve para atribuir ou adicionar um valor ao que você estava fazendo antes, chamamos isso de concatenação
 
+    // no js o = n significa igual, e sim recebe, como var nome = 'edu' (variavel nome recebe edu)
+
+    /* 
+    
+    var n1 = window.prompt('Digite um numero aleatorio');
+    var n2 = window.prompt('Digite outro numero');
+
+    //var $ = n1 + n2; n funciona pq n converteu
+
+    funç~eos do + [adição] e [concatenação], se tiver 2 numeros entre ele, ele age como forma de adição numerica, se tiver string ele age como concatenação
+    o proprio prompt retorna um numero string, ent tem que converter para number (Number.parseInt(n) para inteiros, Number.parseFloat(n) para real) 
+ 
+    pra resolver vamos tentar...
+    */
+    var n1 = Number.parseInt(window.prompt('Digite um numero aleatorio'));
+    var n2 = Number(window.prompt('Digite outro numero')); // se quiser numero quebrado use o parseFloat, ou a forma simplificada que é o Number(n)
+
+    var $ = n1 + n2; 
+    window.alert ('A soma de ambos é: ' + String($))
+
+    // pra converter numero para string usa o String(n) ou n.toString()[o 'n' ali serve para colcoar direto o que você quer converter]
+
+
+    //pra facilitar na concatenação tem ${(var)}
+
+    window.alert (`Olá novamente ${nome} `)
+
+    /*
+    outros comandos usando a var $ como exemplo
+    
+    $.length    diz quantos caracteres tem a string
+    $.toUpperCase()   Deixa todas as letras maiuculas
+    $.toLowerCase()  deixa todas as letras minusculas
+    
+    
+    */
+
+    document.writeln(` Seu nome tem ${nome.length} letras`)  //comando pra escrever na tela
+    document.writeln(' Seu nome em maisculo fica' + nome.toUpperCase() )
+    document.writeln(`E em minusculo fica ${nome.toLowerCase()} !`)
+
+
+    /*
+    para arrumar numeros podemos usar
+
+    n1.toFixed(2) = coloca em duas casas, se for 15,5 ele exibe 15,50
+    n1.fixed(2).replace('.' , ',')
+    
+    */
+
+    document.writeln(`o numero quebrado fica assim ${n1.toFixed(2).replace('.' , ',')} `)
+
+    document.writeln(`em salario exibe assim ${n1.toLocaleString('pt-BR' ,{style: 'currency', currency: 'BRL'})} `)
     </script>
 </body>
 </html>
