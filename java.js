@@ -1,8 +1,8 @@
 /*Pra colocar o java script, ele carrega sempre por ultimo e no fim do codigo*/
     /*window.alert('Minha primeira mensagem');
     window.confirm('Está gostando do JS');  */
-    var nome = window.prompt('Qual seu nome?');
-    window.alert('É um grande prazer em te conhecer, ' + nome + '!') //o + serve para atribuir ou adicionar um valor ao que você estava fazendo antes, chamamos isso de concatenação
+    //var nome = window.prompt('Qual seu nome?');
+   // window.alert('É um grande prazer em te conhecer, ' + nome + '!') //o + serve para atribuir ou adicionar um valor ao que você estava fazendo antes, chamamos isso de concatenação
 
     // no js o = n significa igual, e sim recebe, como var nome = 'edu' (variavel nome recebe edu)
 
@@ -18,18 +18,18 @@
  
     pra resolver vamos tentar...
     */
-    var n1 = Number.parseInt(window.prompt('Digite um numero aleatorio'));
-    var n2 = Number(window.prompt('Digite outro numero')); // se quiser numero quebrado use o parseFloat, ou a forma simplificada que é o Number(n)
+    //var n1 = Number.parseInt(window.prompt('Digite um numero aleatorio'));
+    //var n2 = Number(window.prompt('Digite outro numero')); // se quiser numero quebrado use o parseFloat, ou a forma simplificada que é o Number(n)
 
-    var $ = n1 + n2; 
-    window.alert ('A soma de ambos é: ' + String($))
+    //var $ = n1 + n2; 
+    //window.alert ('A soma de ambos é: ' + String($))
 
     // pra converter numero para string usa o String(n) ou n.toString()[o 'n' ali serve para colcoar direto o que você quer converter]
 
 
     //pra facilitar na concatenação tem ${(var)}
 
-    window.alert (`Olá novamente ${nome} `)
+    //window.alert (`Olá novamente ${nome} `)
 
     /*
     outros comandos usando a var $ como exemplo
@@ -41,9 +41,9 @@
     
     */
 
-    document.writeln(` Seu nome tem ${nome.length} letras`)  //comando pra escrever na tela
-    document.writeln(' Seu nome em maisculo fica' + nome.toUpperCase() )
-    document.writeln(`E em minusculo fica ${nome.toLowerCase()} !`)
+    //document.writeln(` Seu nome tem ${nome.length} letras`)  //comando pra escrever na tela
+    //document.writeln(' Seu nome em maisculo fica' + nome.toUpperCase() )
+    //document.writeln(`E em minusculo fica ${nome.toLowerCase()} !`)
 
 
     /*
@@ -54,9 +54,9 @@
     
     */
 
-    document.writeln(`o numero quebrado fica assim ${n1.toFixed(2).replace('.' , ',')} `)
+    //document.writeln(`o numero quebrado fica assim ${n1.toFixed(2).replace('.' , ',')} `)
 
-    document.writeln(`em salario exibe assim ${n1.toLocaleString('pt-BR' ,{style: 'currency', currency: 'BRL'})} `)
+    //document.writeln(`em salario exibe assim ${n1.toLocaleString('pt-BR' ,{style: 'currency', currency: 'BRL'})} `)
 
         //Operadores do JS
 
@@ -104,3 +104,35 @@
         //por seletor: " querySelector()" e "querySelectorAll()"
         //exemplo: window.document.querySelector('div.msg')
     
+//=========================================================== functions
+
+// usando o addevent você não precisa usar o onclick ou qualquer outra coisa, você pode usar direto aqui
+//o html fica assim:    <div id="area">Interaja...</div>
+var a = window.document.getElementById('area');
+a.addEventListener('click', clicar)
+a.addEventListener('mouseenter', entrar)
+a.addEventListener('mouseout', sair)
+
+
+//esse usa o metodo de chamar no html, usando o onclick
+// só com a function o html fica assim com o chamado no proprio html
+//<div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">Interaja...</div>
+    
+
+function clicar() {
+    a.innerText = "Clicou"
+    a.style.background = 'red'
+
+}
+
+function entrar() {
+    var a = window.document.getElementById('area')
+    a.innerText = "Hover";
+
+}
+
+function sair() {
+    var a = window.document.getElementById('area')
+    a.innerText = "Bye!";
+
+}
