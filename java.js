@@ -151,3 +151,19 @@ function somar() {
 
 
 }
+
+//========================================= condições ======
+
+function calcular(){
+    var velo = document.getElementById('vel')
+    var veloc = Number(vel.value)
+    if (veloc < 60){
+        window.alert (`A sua velocidade é ${veloc}km/h, está okay`)
+    
+    }else{
+        window.alert (`A sua velocidade é ${veloc}km/h, será mutado, rápido demais`)
+    }
+}
+
+
+
