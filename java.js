@@ -165,5 +165,60 @@ function calcular(){
     }
 }
 
+// else if
+var idade = 15
+if (idade < 16){
+    //alert('não vota')
+}else if (idade < 18) {
+    //alert('Voto opcional')
+    }else{
+       // alert('Voto obrigatorio')
+}
 
+// para saber a exata hora 
+
+var agora = new Date()
+var hora = agora.getHours()
+
+alert(`Agora é exatamente ${hora} horas.`)
+if (hora < 12){
+    alert(`Bom dia`)
+}else if(hora <= 18){
+    alert(`Bom tarde`)
+} else {
+    alert(`Boa noite`)
+
+}
+
+    //condicao multipla
+var now = new Date()
+var DiaSem = now.getDay()
+
+switch (DiaSem) {
+    case 0:
+        alert(`Domingo`)
+        break; // obrigatorio para parar a switch
+    case 1:
+        alert(`Segunda`)
+        break;
+    case 2:
+        alert(`Terça`)
+        break;
+    case 3:
+        alert(`Quarta`)
+        break;
+    case 4:
+        alert(`Quinta`)
+        break;
+    case 5:
+        alert(`Sexta`)
+        break;
+    case 6:
+        alert(`Sabádo`)
+        break;
+
+    default:
+        alert('[Erro]')
+        break;
+} 
 
