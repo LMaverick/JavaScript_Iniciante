@@ -180,13 +180,13 @@ if (idade < 16){
 var agora = new Date()
 var hora = agora.getHours()
 
-alert(`Agora é exatamente ${hora} horas.`)
+//alert(`Agora é exatamente ${hora} horas.`)
 if (hora < 12){
-    alert(`Bom dia`)
+  //  alert(`Bom dia`)
 }else if(hora <= 18){
-    alert(`Bom tarde`)
+   // alert(`Bom tarde`)
 } else {
-    alert(`Boa noite`)
+   // alert(`Boa noite`)
 
 }
 
@@ -196,29 +196,29 @@ var DiaSem = now.getDay()
 
 switch (DiaSem) {
     case 0:
-        alert(`Domingo`)
+       // alert(`Domingo`)
         break; // obrigatorio para parar a switch
     case 1:
-        alert(`Segunda`)
+        //alert(`Segunda`)
         break;
     case 2:
-        alert(`Terça`)
+        //alert(`Terça`)
         break;
     case 3:
-        alert(`Quarta`)
+        //alert(`Quarta`)
         break;
     case 4:
-        alert(`Quinta`)
+       // alert(`Quinta`)
         break;
     case 5:
-        alert(`Sexta`)
+       // alert(`Sexta`)
         break;
     case 6:
-        alert(`Sabádo`)
+       // alert(`Sabádo`)
         break;
 
     default:
-        alert('[Erro]')
+       // alert('[Erro]')
         break;
 } 
 
