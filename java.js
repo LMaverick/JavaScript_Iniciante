@@ -222,3 +222,7 @@ switch (DiaSem) {
         break;
 } 
 
+// os comandos  var img = document.createElement('img')
+//img.setAttribute('id', 'foto')
+// é o mesmo de colcoar no html <img id ="foto">
+//tbm colocar o (nome obj).appendChild(img) para adicionar oq vc quer
