@@ -1,5 +1,5 @@
 body{
-    background: rgb(70, 142, 236);
+    background: rgb(28, 33, 85) ;
     font: normal 15pt arial;
     
 }
@@ -36,4 +36,7 @@ img{
     margin-right: auto;
     border-radius: 50%;
 }
-
+#msg{
+    text-align: center;
+    padding-bottom: 12px;
+}
