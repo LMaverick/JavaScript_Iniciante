@@ -226,4 +226,22 @@ switch (DiaSem) {
 //img.setAttribute('id', 'foto')
 // é o mesmo de colcoar no html <img id ="foto">
 //tbm colocar o (nome obj).appendChild(img) para adicionar oq vc quer
-func
+
+
+
+// usando o while, repetição =====================================================
+
+function comerPizza(){
+    while (temFatia){
+        comerFatia()
+    }
+    //você comeu toda sua pizza
+
+    // repetição com teste de inicio
+
+}
+
+do{
+
+} while (condição())
+// o "DO" com "WHILE" no final faz ele testar a repetição no fim, ele faz tudo primeiro e dps repete
