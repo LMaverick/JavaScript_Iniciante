@@ -245,3 +245,18 @@ do{
 
 } while (condição())
 // o "DO" com "WHILE" no final faz ele testar a repetição no fim, ele faz tudo primeiro e dps repete
+
+
+//agora a estrutura de repetição com variavel de controle
+
+for(inicio; teste; incremento){
+    //pode colcoar qualquer estrutura aqui
+}
+
+//exemplo
+for(var c=1; c<=10; c++){ //lembrando q o c++ é o mesmo de c(valorAnterior) + 1;
+     
+    //comando
+}
+
+// 
