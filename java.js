@@ -332,3 +332,22 @@ function fatorial(n){
 
 console.log(fatorial(5))
 */
+
+//proximas coisas para aprender
+
+/*
+    - function 
+    - objetos, orientada á objeto
+    - modularização
+    - regEx
+    - JSON
+    - AJAX
+    - nodeJS
+    - Jquery e outras bibliotecas
+    
+
+
+
+
+
+*/
