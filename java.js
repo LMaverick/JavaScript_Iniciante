@@ -291,3 +291,44 @@ for(let po=0; po<n.length; po++){
 
 //para buscar um valor use o "num.indexOf(7)", ele procura o valor 7 e me fala qual chave tem, caso não tenha ele retorna -1, que significa que pesquisou mas não achou
 
+// funçoes =================================
+
+//toda função tem chamada, parametro, a ação, e o retorno
+
+//funções são açoes executadas assim que são chamadas ou em decorrencia de algum evento
+// uma função pode receber parametros e retornar um resultado
+
+/*function acao(param){
+
+}
+acao(5)*/
+
+//exemplo para saber se o numero é par ou impar
+
+/*
+function parimp(n){
+    if( n %2 ==0){
+        return 'par'
+
+    }else {
+        return 'impar'
+
+    }
+}
+
+let res = parimp(11)
+*/
+
+//uma forma usando recursividade de calcular fatorial
+
+/*
+function fatorial(n){
+    if(n == 1){
+        return 1
+    }else {
+        return n* fatorial(n-1)
+    }
+}
+
+console.log(fatorial(5))
+*/
