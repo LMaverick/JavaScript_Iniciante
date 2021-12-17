@@ -259,4 +259,35 @@ for(var c=1; c<=10; c++){ //lembrando q o c++ é o mesmo de c(valorAnterior) + 1
     //comando
 }
 
-// 
+// ========================================================
+//variaveis compostas
+
+let num = [ 5 , 8 , 4] // usando o array, ele começa contando a chave no zero, o priemiro numero não é 1 e sim 0
+
+// para colocar outro valor é só colocar 'num[3] = 6', assim o quarto valor da chave coloca o numero 6
+
+//para n ficar contando qual valor está atualmente vc pode simplificar usando "num.push(7)", assim o proximo valor do array ele adiciona o numero 7 automaticamente
+
+//para achar o tamanho do array use o "num.length" ai ele conta o comprimento
+
+//num.sort() ele coloca todos os numero em ordem crescente
+
+//para mostrar todos os numeros do array use a repetição, como ""
+
+// uma forma melhor de usar o for é:
+/*
+for(let pos 'in' num){
+    console.log(num[pos])
+
+    só add o in sem nada para rodar o codigo, simplifica esse codigo
+}
+let n = [5, 8, 4, 12]
+
+for(let po=0; po<n.length; po++){
+  console.log(n[po])
+}
+
+*/
+
+//para buscar um valor use o "num.indexOf(7)", ele procura o valor 7 e me fala qual chave tem, caso não tenha ele retorna -1, que significa que pesquisou mas não achou
+
